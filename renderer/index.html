@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mockcraft</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">◪</span>
+      <span class="brand-name">Mockcraft</span>
+      <span class="brand-tag">Pay once. Mock up forever.</span>
+    </div>
+    <div class="topbar-actions">
+      <button id="btn-upload" class="btn btn-ghost">⇪ Load design</button>
+      <button id="btn-export" class="btn btn-primary">Export PNG</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar" id="template-list">
+      <!-- template gallery injected here -->
+    </aside>
+
+    <section class="stage">
+      <div class="canvas-wrap">
+        <canvas id="preview"></canvas>
+      </div>
+      <div class="stage-status" id="status">Drop an image anywhere, or click “Load design”.</div>
+    </section>
+
+    <aside class="controls">
+      <h3>Design</h3>
+      <div class="drop-zone" id="drop-zone">
+        <div class="drop-icon">🖼️</div>
+        <div class="drop-text">Drop your design here<br /><span>PNG · JPG · WEBP</span></div>
+      </div>
+      <div class="design-meta" id="design-meta"></div>
+
+      <h3>Placement</h3>
+      <label class="slider-row">Scale <input type="range" id="ctl-scale" min="0.2" max="3" step="0.01" value="1" /><span id="val-scale">1.00</span></label>
+      <label class="slider-row">Offset X <input type="range" id="ctl-offx" min="-0.5" max="0.5" step="0.005" value="0" /><span id="val-offx">0</span></label>
+      <label class="slider-row">Offset Y <input type="range" id="ctl-offy" min="-0.5" max="0.5" step="0.005" value="0" /><span id="val-offy">0</span></label>
+      <label class="slider-row">Rotation <input type="range" id="ctl-rot" min="-45" max="45" step="0.5" value="0" /><span id="val-rot">0°</span></label>
+      <div class="fit-row">
+        <button class="chip active" data-fit="cover">Cover</button>
+        <button class="chip" data-fit="contain">Contain</button>
+        <button class="chip" data-fit="stretch">Stretch</button>
+        <button class="btn btn-ghost btn-small" id="btn-reset">Reset</button>
+      </div>
+
+      <div id="garment-section" style="display:none">
+        <h3>Garment color</h3>
+        <div class="swatches" id="swatches"></div>
+      </div>
+
+      <h3>Batch export</h3>
+      <p class="hint">Apply this design across templates in one pass.</p>
+      <div class="batch-list" id="batch-list"></div>
+      <button id="btn-batch" class="btn btn-secondary">Export selected (<span id="batch-count">0</span>)</button>
+    </aside>
+  </main>
+
+  <script src="../src/core/raster.js"></script>
+  <script src="../src/core/templates.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
