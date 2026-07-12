@@ -12,7 +12,7 @@ Placeit charges **$14.95/month, forever**, to drag your image onto a stock photo
 
 Don't want to touch a terminal? Grab the packaged Windows installer (and support development):
 
-**→ [Get Mockcraft on Whop](https://whop.com/onetime-suite)** — pay once, own it forever.
+**→ [Get Mockcraft on Whop](https://whop.com/benjisaiempire/mockcraft)** — pay once, own it forever.
 
 ## Features
 
