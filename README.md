@@ -1,5 +1,9 @@
 # ◪ Mockcraft
 
+## Demo
+
+VIDEO-PLACEHOLDER
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **The product mockup generator you buy once and own forever.** Drop your design or screenshot onto a phone, laptop, tablet, browser window, t-shirt, hoodie, business card, framed poster, book cover, or sticker scene — with real perspective warping onto angled surfaces, garment color variants, and a batch mode that exports one design across every template in a single pass. 100% local, zero subscription, zero cloud, zero telemetry.
